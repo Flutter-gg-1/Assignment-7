@@ -24,7 +24,7 @@ class Circle extends Shape {
 
   //setter
   void setRadius(num radius) {
-    _radius = _radius;
+    _radius = radius;
   }
 
   //method from super to calculte area of Circle
@@ -64,7 +64,7 @@ class Rectangle extends Shape {
   }
 
   void setLength(num length) {
-    _length = _length;
+    _length = length;
   }
 
   ////getter & setter for Width
@@ -73,7 +73,7 @@ class Rectangle extends Shape {
   }
 
   void setWidth(num width) {
-    _width = _width;
+    _width = width;
   }
 
   //methods from super to calculte area
