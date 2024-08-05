@@ -40,7 +40,7 @@ class Circle extends Shape {
 }
 
 // Rectangle class
-class Rectangle extends Shape{
+class Rectangle extends Shape {
   // attribute
   double _length;
   double _width;
@@ -51,13 +51,13 @@ class Rectangle extends Shape{
   Rectangle.noAttribute([this._length = 3, this._width = 3]);
   @override
   void getArea() {
-    double area = _length*_width;
+    double area = _length * _width;
     print("Rectangle area is: $area");
   }
 
   @override
   void getPerimeter() {
-    double perimeter =  (_length*_width)*2;
+    double perimeter = (_length + _width) * 2;
     print("Rectangle perimeter is: $perimeter");
   }
 
