@@ -19,14 +19,14 @@ class Circle extends Shape {
   @override
   void getArea() {
     double area = pi * _radius * _radius;
-    print("\ncircle area is: $area");
+    print("\ncircle area is: ${area.toStringAsFixed(2)}");
   }
 
   // override getPerimete method
   @override
   void getPerimeter() {
     double perimeter = 2 * pi * _radius;
-    print("circle perimeter is: $perimeter");
+    print("circle perimeter is: ${perimeter.toStringAsFixed(2)}");
   }
 
   // getter and setter methode
@@ -52,13 +52,13 @@ class Rectangle extends Shape {
   @override
   void getArea() {
     double area = _length * _width;
-    print("\nRectangle area is: $area");
+    print("\nRectangle area is: ${area.toStringAsFixed(1)}");
   }
 
   @override
   void getPerimeter() {
     double perimeter = (_length + _width) * 2;
-    print("Rectangle perimeter is: $perimeter");
+    print("Rectangle perimeter is: ${perimeter.toStringAsFixed(1)}");
   }
 
   // getter and setter methode
