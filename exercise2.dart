@@ -66,7 +66,7 @@ class Customer extends Person {
   }
 }
 
-//main class
+//main class//
 void main() {
   print(magentapen("..................................."));
   print("..............Welcome..............");
