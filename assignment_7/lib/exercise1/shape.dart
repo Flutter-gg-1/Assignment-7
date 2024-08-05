@@ -5,7 +5,7 @@
 * */
 abstract class Shape {
 
-  // Init th method
-  void getArea();
-  void getPerimeter();
+  // Init th methods
+  double getArea();
+  double getPerimeter();
 }

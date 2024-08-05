@@ -26,20 +26,27 @@ class Circle extends Shape {
   }
 
   @override
-  void getArea() {
+  double getArea() {
     // To fine area of circle (pi * r * r) ^_^
     double area = (pi * _radius! * _radius!);
-    print("circle area is: $area");
+
+    // Return the result
+    return area;
   }
 
   @override
-  void getPerimeter() {
-    // TODO: implement getPerimeter
+  double getPerimeter() {
+    // Define a perimeter variable to store the result of the perimeter calculation.
+    double perimeter = _radius! * 2 * pi;
+
+    // Return the result
+    return perimeter;
   }
 
-  // Get radius
-  get getRadius => _radius;
+  // Getter fun to return radius
+  // double get getRadius => _radius!;
+  double get getRadius => _radius ?? 0; // another solution :) without non-null assertion operator
 
-  // Set radius
-  set setRadius(double radius) => _radius = radius;
+  // Setter fun to update radius
+  double setRadius(double radius) => _radius = radius;
 }

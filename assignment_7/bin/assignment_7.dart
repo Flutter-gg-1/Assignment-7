@@ -1,5 +1,5 @@
-import 'package:assignment_7/assignment_7.dart' as assignment_7;
+import 'exercise1.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${assignment_7.calculate()}!');
+void main() {
+  Exercise1.main();
 }
