@@ -14,10 +14,11 @@ in example `getPerimeter()` method from class Circle :
 with more oop concepts search for it :)
 
 #### Exercise 2
-create a class Book and parent class Person
-with his subclasses Author & Customer the idea is
+create a class `Book` and parent class `Person`
+with his subclasses `Author` & `Customer` the idea is
 for connect Customer with their book using 
 oop concepts sush as object call counter in example :
+
 ![alt text](image-1.png)
 
 with more oop concepts search for it :)
