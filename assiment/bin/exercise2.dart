@@ -2,5 +2,5 @@ class Person {
   String name;
   String email;
 
-  Person(this.name, this.email);
+  Person({required this.name, required this.email});
 }
