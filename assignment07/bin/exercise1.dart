@@ -1,4 +1,5 @@
-import 'dart:math';
+import "color_print.dart";
+import 'dart:math' as math;
 
 //Define an abstract class named Sharp.
 abstract class Sharp {
@@ -13,7 +14,7 @@ class Circle extends Sharp {
   double? _radius;
 
   //Define PI as a constant using the Math library.
-  static const double pi = 3.14159;
+  static const double pi = math.pi;
 
   //A parameterized constructor that sets the radius.
   Circle(this._radius);
@@ -27,14 +28,14 @@ class Circle extends Sharp {
   @override
   void getArea() {
     double area = pi * _radius! * _radius!;
-    print('circle area is: $area');
+    printInfo("circle area is: $area");
   }
 
   //Implement the getPerimeter method.
   @override
   void getPerimeter() {
     double perimeter = 2 * pi * _radius!;
-    print('circle perimeter is: $perimeter');
+    printInfo("circle perimeter is: $perimeter");
   }
 
   //A getter for the radius.
@@ -55,7 +56,7 @@ class Rectangle extends Sharp {
 
   //A parameterized constructor that sets the length and width.
   Rectangle(this._length, this._width);
-  
+
   //A named constructor that sets the length and width to 3.
   Rectangle.noAttribute() {
     _length = 3;
@@ -65,13 +66,13 @@ class Rectangle extends Sharp {
   @override
   void getArea() {
     double area = _length! * _width!;
-    print('Rectangle area is: $area');
+    printInfo("Rectangle area is: $area");
   }
 
   @override
   void getPerimeter() {
     double perimeter = 2 * (_length! + _width!);
-    print('Rectangle perimeter is: $perimeter');
+    printInfo("Rectangle perimeter is: $perimeter");
   }
 
   //A getter for the length.
@@ -93,4 +94,28 @@ class Rectangle extends Sharp {
   set width(double? width) {
     _width = width;
   }
+}
+
+void exerciseOne(List<dynamic> list) {
+  printSuccess("\nShapes\n");
+  // Circle objects
+  Circle c1 = Circle(5);
+  Circle c2 = Circle.noAttribute();
+
+  //Execute the getArea method for the Circle objects.
+  c1.getArea();
+  c1.getPerimeter();
+
+  //Print the radius of the Circle objects.
+  printInfo("Circle 2 radius is: ${c2.radius}");
+
+  // Rectangle objects
+  Rectangle r1 = Rectangle(3, 5);
+
+  //Execute the getArea method for the Rectangle objects.
+  r1.getArea();
+
+  //Print the width of the Rectangle object.
+  r1.width = 8;
+  r1.getPerimeter();
 }

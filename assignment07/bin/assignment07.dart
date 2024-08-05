@@ -1,24 +1,28 @@
-import './exercise1.dart';
+import "./exercise1.dart";
+import "./exercise2.dart";
+import "./error_handler.dart";
+import 'color_print.dart';
 
 void main() {
-  // Circle objects
-  Circle c1 = Circle(5);
-  Circle c2 = Circle.noAttribute();
+  //Variable to control the loop
+  bool isExit = false;
 
-  //Execute the getArea method for the Circle objects.
-  c1.getArea();
-  c1.getPerimeter();
+  do {
+    switch (printMenu()) {
+      case 1:
+        exerciseOne([]);
+        break;
+      case 2:
+        exerciseTwo([]);
+        break;
+      case 3:
+        isExit = true;
+        break;
+      default:
+        printError("Invalid option. Please try again.");
+        break;
+    }
+  } while (!isExit);
 
-  //Print the radius of the Circle objects.
-  print('Circle 2 radius is: ${c2.radius}');
-
-  // Rectangle objects
-  Rectangle r1 = Rectangle(3, 5);
-
-  //Execute the getArea method for the Rectangle objects.
-  r1.getArea();
-
-  //Print the width of the Rectangle object.
-  r1.width = 8;
-  r1.getPerimeter();
+  print("\n\n\n");
 }
