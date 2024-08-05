@@ -1,10 +1,12 @@
-class Person {
+//-------Super class person----------
+abstract class Person {
   String? name;
   String? email;
 
   Person({required this.name, required this.email});
 }
 
+//-------Sub class Author----------
 class Author extends Person {
   static int count = 1;
   int? id;
@@ -15,6 +17,7 @@ class Author extends Person {
   }
 }
 
+//-------class Book----------
 class Book {
   String? name;
   String? isbn;
@@ -24,9 +27,10 @@ class Book {
       {required this.name,
       required this.isbn,
       required this.edition,
-      required this.author});
+      this.author});
 }
 
+//-------Sub class Customer----------
 class Customer extends Person {
   List<Book> bookList = [];
 
@@ -36,6 +40,7 @@ class Customer extends Person {
     bookList.add(book);
   }
 
+//Print Information method
   printInformation() {
     print("-------Customer Info-------");
     print("Customer name:$name");
