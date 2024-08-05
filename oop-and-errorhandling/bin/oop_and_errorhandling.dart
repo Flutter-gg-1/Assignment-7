@@ -17,7 +17,7 @@ void main(List<String> arguments) {
   }
 
   //Exercise 1
-  print('--- The following is an example output of Exercise 1 and 2 ---\n');
+  print('\n--- The following is an example output of Exercise 1 and 2 ---\n');
   Circle c1 = Circle(radius: 5);
   Circle c2 = Circle.noAttribute();
 
