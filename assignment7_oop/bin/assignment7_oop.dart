@@ -1,3 +1,5 @@
+// imports
+import 'dart:io';
 import 'package:assignment7_oop/exercise1.dart'; // exercise 1 file
 
 void main() {
@@ -23,8 +25,34 @@ void main() {
   // Execute getPerimeter() using r1.
   r1.getPerimeter();
 
+  // error handling
+  stdout.write("Enter radius : ");
+  String? userRadius = stdin.readLineSync();
+  try {
+    c1.setRadius = int.parse(userRadius!);
+  }
+  on FormatException {
+    print("ERROR : Non Numeric Values are Not Allowed");
+  }
+  catch (error) {
+    print("ERROR : $error");
+  }
+
+  try {
+    r1.setLength = 10 ~/ 0;
+  }
+  on UnsupportedError {
+    print("ERROR : Division By Zero is Not Allowed.");
+  }
+  catch (error) {
+    print("ERROR : $error");
+  }
+
+  print(c1.getRadius); // 5 if error, otherwise it is userRadius
+  print(r1.getLength); // 6
+
   print('--'*20);
 
   print('====(> Exercise 2 <)====');
-  
+
 }
