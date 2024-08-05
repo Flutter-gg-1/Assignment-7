@@ -1,8 +1,11 @@
 import 'exercise2.dart';
 
 class Author extends Person {
-  static int id = 0;
+  //extand from Person the
+  static int id =
+      0; //Static int to use it inside the the constracter to incremnt
   Author({required super.name, required super.email}) {
-    id += 1;
+    //constracter extnded from person
+    id += 1; //ID incremmnt when we use the constracter
   }
 }
