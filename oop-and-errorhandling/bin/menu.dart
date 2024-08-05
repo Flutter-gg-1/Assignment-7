@@ -148,6 +148,6 @@ bookStore() {
     }
   } while (choice != '0');
 
-  print(customer1.printInformation());
+  customer1.printInformation();
   print('Thank you for shopping with us!!');
 }
