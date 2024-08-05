@@ -1,4 +1,5 @@
 // person class
+
 class Person{
   String? name;
   String? email;
@@ -7,9 +8,10 @@ class Person{
 
 // Author class
 class Author extends Person{
-  int id = 1;
+  static int counter = 1;
+  int id;
   Author({required super.name, required super.email, required this.id}){
-    id++;
+    id = counter++;
   }
 }
 
@@ -22,6 +24,29 @@ class Book{
 
   Book({this.name, this.author, this.aditionNumber, this.isbn});
 
+}
+
+// customer class
+class Customer extends Person{
+  Customer({required super.name, required super.email});
+  List<Book> bookList = [];
+
+  addBook(Book book){
+    bookList.add(book);
+  }
+
+  printInformation(){
+    print("\nCustomer information: ");
+    print("name: $name\nemail: $email");
+    print("\nCustomer book list: ");
+    for (var element in bookList) {
+      print("------------------------------");
+      print("Book name: ${element.name}");
+      print("ISBN: ${element.isbn}");
+      print("Edition number: ${element.aditionNumber}");
+      print("Auther: ${element.author!.name}");
+    }
+  }
 }
 
 

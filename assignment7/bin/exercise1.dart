@@ -19,7 +19,7 @@ class Circle extends Shape {
   @override
   void getArea() {
     double area = pi * _radius * _radius;
-    print("circle area is: $area");
+    print("\ncircle area is: $area");
   }
 
   // override getPerimete method
@@ -52,7 +52,7 @@ class Rectangle extends Shape {
   @override
   void getArea() {
     double area = _length * _width;
-    print("Rectangle area is: $area");
+    print("\nRectangle area is: $area");
   }
 
   @override
