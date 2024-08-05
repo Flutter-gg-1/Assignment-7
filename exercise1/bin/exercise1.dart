@@ -1,5 +1,7 @@
 import '../exercise1/rectangle.dart';
 import '../exercise1/circle.dart';
+import '../ui/calculater.dart';
+import 'dart:io';
 
 void main(List<String> arguments) {
   //Excercise 1
@@ -21,11 +23,12 @@ void main(List<String> arguments) {
   r1.getArea();
   r1.getPermiter();
 
-  print("chage legth to 6");
+  print("chage length to 6");
   r1.setLength = 6;
   r1.getPermiter();
 
   //end of Excercise 1
 
-  
+  //UI
+  exercise1();
 }
