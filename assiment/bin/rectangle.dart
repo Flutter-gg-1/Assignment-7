@@ -10,13 +10,13 @@ class Rectangle extends Shape {
   }
   @override
   void getArea() {
-    double area = _length! * _width!;
+    double area = _length * _width;
     print("Rectangle area is: $area");
   }
 
   @override
   void getPerimeter() {
-    double perimeter = 2 * (_length! + _width!);
+    double perimeter = 2 * (_length + _width);
     print("Rectangle perimeter is: ${perimeter.toStringAsFixed(1)}");
   }
 
