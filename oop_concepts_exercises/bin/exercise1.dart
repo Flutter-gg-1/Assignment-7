@@ -23,12 +23,14 @@ class Circle extends Shape {
   @override
   void getArea() {
     double? area = pi* math.pow(_radius, 2);
+    area = double.parse(area.toStringAsFixed(2));
     print("circle area is: $area");
   }
 
   @override
   void getPerimeter() {
     double? perimeter = 2*pi*_radius;
+    perimeter = double.parse(perimeter.toStringAsFixed(2));
     print("circle perimeter is: $perimeter");
   }
   
@@ -54,13 +56,14 @@ class Rectangle extends Shape {
   @override
   void getArea() {
     double area = _length * _width;
+    area = double.parse(area.toStringAsFixed(2));
     print("Rectangle area is: $area");
   }
 
   @override
   void getPerimeter() {
     double perimeter = (_width + _length) * 2;
-
+    perimeter = double.parse(perimeter.toStringAsFixed(2));
     print("Rectangle perimeter is: $perimeter");
   }
   

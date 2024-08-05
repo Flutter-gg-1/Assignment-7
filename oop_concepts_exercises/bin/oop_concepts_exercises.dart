@@ -1,5 +1,25 @@
-import 'package:oop_concepts_exercises/oop_concepts_exercises.dart' as oop_concepts_exercises;
-
+import 'exercise1.dart';
 void main(List<String> arguments) {
-  print('Hello world: ${oop_concepts_exercises.calculate()}!');
+ // exercise 1
+ Circle c1 = Circle();
+ Circle c2 = Circle.noAttribute();
+
+ c1.setRadius = 5;
+
+ c1.getArea();
+
+ c1.getPerimeter();
+
+ print(c2.getRadius); //radius = 2
+
+ Rectangle r1 = Rectangle();
+
+ r1.setLength = 3;
+ r1.setWidth = 5;
+
+ r1.getArea();
+
+ r1.setWidth = 8;
+
+ r1.getPerimeter(); //result = 22
 }
