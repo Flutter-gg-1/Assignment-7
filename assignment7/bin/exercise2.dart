@@ -13,4 +13,15 @@ class Author extends Person{
   }
 }
 
+// book class
+class Book{
+  String? name;
+  String? isbn;
+  int? aditionNumber;
+  Author? author;
+
+  Book({this.name, this.author, this.aditionNumber, this.isbn});
+
+}
+
 
