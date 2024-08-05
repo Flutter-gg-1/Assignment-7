@@ -16,20 +16,23 @@ class Rectangle extends Shape {
 
   @override
   void getPerimeter() {
- double perimeter = 2 * (_length! + _width!);
-    print("Rectangle perimeter is: $perimeter");
-  }
-double get lenght{
-  return _length;
-}
-double get width{
-  return _width;
-}
- set length(double length) {
-    _length = length;
-  }
-    set width(double width) {
-    _width = width;
+    double perimeter = 2 * (_length! + _width!);
+    print("Rectangle perimeter is: ${perimeter.toStringAsFixed(1)}");
   }
 
+  double get lenght {
+    return _length;
+  }
+
+  double get width {
+    return _width;
+  }
+
+  set length(double length) {
+    _length = length;
+  }
+
+  set width(double width) {
+    _width = width;
+  }
 }

@@ -14,13 +14,13 @@ class Circle extends Shape {
   @override
   void getArea() {
     double area = pi * _radius * _radius;
-    print("circle area is: $area");
+    print("circle area is: ${area.toStringAsFixed(1)}");
   }
 
   @override
   void getPerimeter() {
     var perimeter = 2 * pi * _radius;
-    print("Circle perimeter is: $perimeter");
+    print("Circle perimeter is: ${perimeter.toStringAsFixed(1)}");
   }
 
   double get raduis {
