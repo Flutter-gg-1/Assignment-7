@@ -5,26 +5,15 @@ import 'package:assignment7_oop/exercise2.dart'; // exercise 2 file
 
 void main() {
   print('====(> Exercise 1 <)====');
-  // Create 2 objects of the Circle class named c1 and c2:
-  // c1 with a radius of 5.
-  // c2 using the named constructor without a radius parameter.
   Circle c1 = Circle(radius: 5);
-  Circle c2 = Circle.noAttribute();
-
-  // Execute getArea() using c1.
+  Circle c2 = Circle.noAttribute(); // using named constructor
   c1.getArea();
-  // Execute getPerimeter() using c1.
   c1.getPerimeter();
-  // Print the radius of c2.
-  print(c2.getRadius);
-  // Create an object of the Rectangle class named r1 with a length of 3 and a width of 5.
+  print(c2.getRadius); // 2
   Rectangle r1 = Rectangle(length: 3, width: 5);
-  // Execute getArea() using r1.
   r1.getArea();
-  // Modify either the length or width (but not both) to make the perimeter equal to 22.
   r1.setLength = 6;
-  // Execute getPerimeter() using r1.
-  r1.getPerimeter();
+  r1.getPerimeter(); // 22
 
   // error handling
   stdout.write("Enter radius : ");
@@ -55,5 +44,39 @@ void main() {
   print('--'*20);
 
   print('====(> Exercise 2 <)====');
+  Author author1 = Author(name: "Yaser", email: "Yaser@something.com");
+  Author author2 = Author(name: "Fahad", email: "Fahad@email.com");
+  Author author3 = Author(name: "Ali", email: "Ali@mail.sa");
+  
+  Book book1 = Book(name: "Life is good", ISBN: "11111", editionNumber: 2, author: author1);
+  Book book2 = Book(name: "Dart Language", ISBN: "22222", editionNumber: 1, author: author2);
+  Book book3 = Book(name: "Flutter Secrets", ISBN: "343434", editionNumber: 1, author: author3);
+  
+  List<Author> authors = [author1,author2,author3];
+  for(var author in authors) {
+    print("${author.name}'s ID is ${author.authorID}");
+  }
 
+  Customer customer1 = Customer(name: "Faisal", email: "Faisal@hello.com");
+  customer1.addBook(book1);
+  customer1.addBook(book2);
+  customer1.addBook(book3);
+  customer1.printInformation();
+  
+  print('////');
+  
+  Customer customer2 = Customer(name: "Salem", email: "Salem@example.com");
+  customer2.printInformation();
+  
+  // error handling
+  try {
+    List<Book>? books;
+    for(var b in books!) {
+      customer2.addBook(b);
+    }
+  }
+  catch (error) {
+    print("ERROR : $error");
+  }
+  print("End of program !");
 }

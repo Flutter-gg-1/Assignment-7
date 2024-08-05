@@ -7,9 +7,11 @@ class Person {
 
 class Author extends Person {
   static int id = 0;
+  int? authorID; // variable to hold the current id and save it as this author ID
 
   Author({required super.name, required super.email}) {
-    id++; // increment each time object of type Author gets created
+    // increment id each time object of type Author gets created and assign it to this author
+    authorID = ++id;
   }
 }
 
@@ -37,12 +39,15 @@ class Customer extends Person {
   void printInformation() {
     print("Customer Name : $name | Customer Email : $email");
     if (bookList == null || bookList!.isEmpty) {
-      print("You haven't added any books yet.");
-    } else {
+      print("$name haven't added any books yet.");
+    }
+    else {
       for (var book in bookList!) {
         print("Book name : ${book.name} by ${book.author?.name}");
+        print("Author ID : ${book.author!.authorID}");
         print("Book ISBN : ${book.ISBN}");
         print("Contact the author by email : ${book.author?.email}");
+        print("--"*20);
       }
     }
   }

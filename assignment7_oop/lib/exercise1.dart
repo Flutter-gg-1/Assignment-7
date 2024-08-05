@@ -1,18 +1,16 @@
 import 'dart:math'; // library used to get PI value.
 
-// abstract class to represent a shape
 abstract class Shape {
   void getArea();
   void getPerimeter();
 }
 
-// class to represent a circle
 class Circle extends Shape {
   num? _radius;
   static const PI = pi;
 
   // parameterized constructor
-  Circle({num? radius}) {
+  Circle({required num? radius}) {
     _radius = radius;
   }
 
@@ -42,7 +40,6 @@ class Circle extends Shape {
   }
 }
 
-// class to represent a rectangle
 class Rectangle extends Shape {
   num? _length;
   num? _width;
