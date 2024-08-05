@@ -1,32 +1,26 @@
 import 'dart:math'; // library used to get PI value.
-/*
-  abstract class to represent a shape
-  abstract class is a special class that can't have instances
-*/
+
+// abstract class to represent a shape
 abstract class Shape {
-  // class methods / behaviours
   void getArea();
   void getPerimeter();
 }
 
 // class to represent a circle
 class Circle extends Shape {
-  // class attributes / variables
   num? _radius;
   static const PI = pi;
 
-  // class constructors
-  // 1. parameterized constructor
-  Circle({required radius}) {
+  // parameterized constructor
+  Circle({num? radius}) {
     _radius = radius;
   }
 
-  // 2. named constructor
+  // named constructor
   Circle.noAttribute() {
     _radius = 2;
   }
 
-  // class methods / behaviours
   set setRadius(num r) {
     _radius = r;
   }
@@ -45,5 +39,51 @@ class Circle extends Shape {
   void getPerimeter() {
     num perimeter = 2 * pi * _radius!;
     print("circle perimeter is: $perimeter");
+  }
+}
+
+// class to represent a rectangle
+class Rectangle extends Shape {
+  num? _length;
+  num? _width;
+
+  // parameterized constructor
+  Rectangle({num? length, num? width}) {
+    _length = length;
+    _width = width;
+  }
+
+  // named constructor
+  Rectangle.noAttribute() {
+    _length = 3;
+    _width = 3;
+  }
+
+  set setLength(num length) {
+    _length = length;
+  }
+
+  get getLength {
+    return _length;
+  }
+
+  set setWidth(num width) {
+    _width = width;
+  }
+
+  get getWidth {
+    return _width;
+  }
+
+  @override
+  void getArea() {
+    num area = _width! * _length!;
+    print("Rectangle area is: $area");
+  }
+
+  @override
+  void getPerimeter() {
+    num perimeter = (_length! + _width!) * 2;
+    print("Rectangle perimeter is: $perimeter");
   }
 }
