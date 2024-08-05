@@ -11,15 +11,15 @@ class Customer extends Person {
   }
 
   printInformation() {
-    print('Customer Name: $name');
-    print('Customer Email: $email\n');
+    print('\nCustomer Name: $name');
+    print('Customer Email: $email');
 
     for (var book in listOfBooks) {
-      print('Book Name: ${book.name}');
+      print('\nBook Name: ${book.name}');
       print('Book ISBN: ${book.isbn}');
       print('Book Edition Number: ${book.editionNumber}');
       print('Author Name: ${book.author.name}');
-      print('Author Email: ${book.author.email}\n');
+      print('Author Email: ${book.author.email}');
     }
   }
 }

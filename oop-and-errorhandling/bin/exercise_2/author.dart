@@ -6,4 +6,8 @@ class Author extends Person {
   Author({required super.name, required super.email}) {
     id++;
   }
+
+  getId(){
+    return id;
+  }
 }
