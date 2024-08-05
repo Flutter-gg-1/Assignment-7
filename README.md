@@ -118,4 +118,4 @@ The project will be evaluated based on the following criteria:
 Good luck, and happy coding!
 
 
-Ensure you use object-oriented programming concepts and include error handling as needed.
+Ensure you use object-oriented programming concepts and include error handling for user inputs.
