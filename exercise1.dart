@@ -89,7 +89,7 @@ class Rectangle extends Shape {
   }
 }
 //main
-///
+
 void main() {
   int? input;
   print(magentapen("..................................."));
@@ -129,3 +129,4 @@ void main() {
     print(blackPen(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"));
   }
 }
+//
