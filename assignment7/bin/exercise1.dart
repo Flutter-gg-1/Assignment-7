@@ -1,5 +1,5 @@
-import 'class/circle.dart';
-import './class/rectangle.dart';
+import 'classEx1/circle.dart';
+import 'classEx1/rectangle.dart';
 
 showExercise1() {
   Circle c1 = Circle(5);
