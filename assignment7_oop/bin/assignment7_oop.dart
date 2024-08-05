@@ -1,6 +1,7 @@
 // imports
-import 'dart:io';
+import 'dart:io'; // library used to interact with user
 import 'package:assignment7_oop/exercise1.dart'; // exercise 1 file
+import 'package:assignment7_oop/exercise2.dart'; // exercise 2 file
 
 void main() {
   print('====(> Exercise 1 <)====');
