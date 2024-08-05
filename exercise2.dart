@@ -50,7 +50,7 @@ class Customer extends Person {
   void addBook(Book book) {
     bookList.add(book);
   }
-//method display info
+//method display info//
   void printInformation() {
     print('${bluePen('Customer Name:')} ${magentapen(name)}');
     print('${bluePen('Customer Email:')} ${magentapen(email)}');
