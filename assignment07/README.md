@@ -2,7 +2,7 @@
 
 ## Exercise 1: Shapes
 
-This exercise demonstrates the use of abstract classes, inheritance, and method overriding in Dart.
+This exercise demonstrates the use of abstract classes, inheritance, error handler, and method overriding in Dart.
 
 ### How to Run
 1. Ensure you have Dart installed on your system, by using:
