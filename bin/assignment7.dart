@@ -1,5 +1,13 @@
-import 'package:assignment7/assignment7.dart' as assignment7;
+import 'exercise1.dart';
+void main() {
+  Circle c1=Circle(5);
+  Circle c2=Circle.noAttribute();
+  c1.getArea();
+  c1.getPerimeter();
+  print(c2.radius);
 
-void main(List<String> arguments) {
-  print('Hello world: ${assignment7.calculate()}!');
+  Rectangle r1 =Rectangle(3, 5);
+  r1.getArea();
+  r1 =Rectangle(6, 5);
+  r1.getPerimeter();
 }

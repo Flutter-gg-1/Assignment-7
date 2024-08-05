@@ -2,13 +2,9 @@
 import 'dart:math';
 
 abstract class Shape{
-
   void getArea(){
-
   }
-  
   void getPerimeter(){
-
   }
 
 }
@@ -19,11 +15,11 @@ class Circle extends Shape{
   static const double PI= 3.1415926535897932;
 
   //parameterized constructor
-  Circle(this.radius){}
+  Circle(this.radius);
 
-  noAttribute(int radius){
-    this.radius=2;
-  }
+  Circle.noAttribute():
+    radius=2;
+  
 
   @override
    void getArea(){
@@ -47,7 +43,7 @@ class Rectangle extends Shape{
   double width;
 
   //parameterized constructor
-  Rectangle(this.length, this.width){}
+  Rectangle(this.length, this.width);
 
   noAttribute(){
     length=3.0;
