@@ -10,8 +10,9 @@ class Person{
 }
 
 class Author extends Person{
-  static int id = 1;
-  Author({required super.name, required super.email}){id++;}
+  static int _counter = 1;
+  int? id;
+  Author({required super.name, required super.email}){id =_counter++;}
 }
 
 class Book {
@@ -38,9 +39,12 @@ class Customer extends Person {
 
   printInformation(){
     print('Customer info : \nName : $name\nEmail : $email');
-    print('======Information about each book======');
+    print('======Information about each book collect by $name======');
     for (var element in bookList) {
-      print(element);
+      print('Name : ${element.name}');
+      print('ISBN : ${element.ISBN}');
+      print('Edition Number : ${element.editionNumber}');
+      print('Author : ${element.author.name}');
     }
   }
 }
