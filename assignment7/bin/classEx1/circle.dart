@@ -1,4 +1,4 @@
-import './shape.dart';
+import 'shape.dart';
 import 'dart:math';
 
 class Circle extends Shape {
