@@ -1,17 +1,6 @@
-
-<p align="center">
-<img src="./assets/logo-h-white.png" alt="Tuwaiq" width="400"/>
-<br/>
-<span style="font-size:30px">object-oriented programming practice</span>
-</p>
-
-<p align="center">
-<a href="https://tuwaiq.edu.sa/"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" 
-</p>
-<hr/>
+![object_oriented_program_practice](https://github.com/user-attachments/assets/5346749b-3ce5-46f6-be29-d77fcf5ca97c)
 
 # Assignment 7
-
 **Exercise 1**
 ## Objective:
 In this exercise, i work with object-oriented programming concepts by creating classes and using error handling
