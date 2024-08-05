@@ -82,7 +82,7 @@ In this exercise, you will continue working with object-oriented programming by 
 5. **Customer Class**:
    - Create a class `Customer` that extends `Person`.
    - Define a constructor.
-   - Add a list called `bookList` (of type `Book`) to store purchased books.
+   - Add a list called `Customer` (of type `Book`) to store purchased books.
    - Define two methods:
      - `addBook(Book book)`: to add a new book to the list.
      - `printInformation()`: to print:
