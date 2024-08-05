@@ -5,7 +5,7 @@ import 'dart:io';
 void uiExercise1() {
   late String userInput;
   do {
-    print("1- Calculate circle -2  Calculate rectangle  0- exit");
+    print("1- Calculate circle -2  Calculate rectangle  0- go book store");
     try {
       userInput = stdin.readLineSync()!;
     } catch (e) {
@@ -19,7 +19,6 @@ void uiExercise1() {
       case == "2":
         calculateRectangle();
         break;
-      
     }
   } while (userInput != "0");
 }
