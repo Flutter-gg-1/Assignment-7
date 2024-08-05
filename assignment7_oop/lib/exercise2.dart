@@ -13,3 +13,12 @@ class Author extends Person {
     id++;
   }
 }
+
+class Book {
+  String? name;
+  String? ISBN;
+  int? editionNumber;
+  Author? author;
+
+  Book({required this.name, required this.ISBN, required this.editionNumber, required this.author});
+}
