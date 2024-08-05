@@ -1,4 +1,3 @@
-import 'dart:js_interop';
 import 'dart:math' as math;
 
 abstract class Shape {
@@ -18,13 +17,13 @@ class Circle extends Shape {
   }
   @override
   void getArea() {
-    num? area;
+    double? area = pi * math.pow(getRadius, 2);
     print("circle area is: $area");
   }
 
   @override
   void getPerimeter() {
-    num? perimeter;
+    double? perimeter = 2 * pi * getRadius;
     print("circle perimeter is: $perimeter");
   }
 
@@ -41,8 +40,9 @@ class Rectangle extends Shape {
   double? _length;
   double? _width;
 
-  Rectangle({required double length}) {
+  Rectangle({required double length, required double width}) {
     _length = length;
+    _width = width;
   }
   Rectangle.noAttribute() {
     _length = 3;
@@ -51,13 +51,13 @@ class Rectangle extends Shape {
 
   @override
   void getArea() {
-    double? area;
+    double? area = getLength * getWidth;
     print("Rectangle area is: $area");
   }
 
   @override
   void getPerimeter() {
-    double? perimeter;
+    double? perimeter= (getLength + getWidth) * 2;
     print("Rectangle perimeter is: $perimeter");
   }
 
