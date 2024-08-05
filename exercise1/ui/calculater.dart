@@ -2,7 +2,7 @@ import '../exercise1/rectangle.dart';
 import '../exercise1/circle.dart';
 import 'dart:io';
 
-void exercise1() {
+void uiExercise1() {
   late String userInput;
   do {
     print("1- Calculate circle -2  Calculate rectangle  0- exit");

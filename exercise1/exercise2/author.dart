@@ -1,12 +1,20 @@
 import 'person.dart';
 
 class Author extends Person {
-  int id = 1;
+  static int counter = 0;
+  late int id = 0;
 
   Author({
     required super.name,
     required super.email,
   }) {
-    id++;
+    counter++;
+    id += counter;
+  }
+
+  void autherInfo() {
+    print("Auther Information");
+    print(name);
+    print(email);
   }
 }
