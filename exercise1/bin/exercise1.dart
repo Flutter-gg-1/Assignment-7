@@ -1,7 +1,6 @@
 import '../exercise1/rectangle.dart';
 import '../exercise1/circle.dart';
 import '../ui/calculater.dart';
-import 'dart:io';
 
 void main(List<String> arguments) {
   //Excercise 1
