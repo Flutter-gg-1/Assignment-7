@@ -22,20 +22,20 @@ void main() {
     c1.setRadius = int.parse(userRadius!);
   }
   on FormatException {
-    print("ERROR : Non Numeric Values are Not Allowed");
+    print("ERROR : '$userRadius' is not a number !!");
   }
   catch (error) {
-    print("ERROR : $error");
+    print("ERROR : $error !!");
   }
 
   try {
     r1.setLength = 10 ~/ 0;
   }
   on UnsupportedError {
-    print("ERROR : Division By Zero is Not Allowed.");
+    print("ERROR : Division By Zero is Not Allowed !!");
   }
   catch (error) {
-    print("ERROR : $error");
+    print("ERROR : $error !!");
   }
 
   print(c1.getRadius); // 5 if error, otherwise it is userRadius
