@@ -1,11 +1,23 @@
+import 'dart:io';
 import './exercise_1/circle.dart';
 import './exercise_1/rectangle.dart';
 import './exercise_2/author.dart';
 import './exercise_2/book.dart';
 import './exercise_2/customer.dart';
+import 'menu.dart';
 
 void main(List<String> arguments) {
+  print('\n--- Welcome to our store ---');
+  stdout.write('Would you like to explore our products? y/n: ');
+  String userInput = stdin.readLineSync()!;
+
+  if (userInput.toLowerCase() == 'y') {
+    menu();
+    return;
+  }
+
   //Exercise 1
+  print('--- The following is an example output of Exercise 1 and 2 ---\n');
   Circle c1 = Circle(radius: 5);
   Circle c2 = Circle.noAttribute();
 
