@@ -25,14 +25,14 @@ class Circle extends Shape {
   void getArea() {
     double area;
     area = pI * _radius! * _radius!;
-    print("circle area is: $area");
+    print("\n circle area is: $area");
   }
 
   @override
   void getPerimeter() {
     double perimeter;
     perimeter = 2 * pI * _radius!;
-    print("circle perimeter is: $perimeter");
+    print("\n circle perimeter is: $perimeter");
   }
 
 //Radius getter and setter method
@@ -66,14 +66,14 @@ class Rectangle extends Shape {
   void getArea() {
     double aera;
     aera = _length! * _width!;
-    print("Rectangle area is: $aera");
+    print("\n Rectangle area is: $aera");
   }
 
   @override
   void getPerimeter() {
     double perimeter;
     perimeter = 2 * (_length! + _width!);
-    print("Rectangle perimeter is: $perimeter");
+    print("\n Rectangle perimeter is: $perimeter");
   }
 
 //Length getter and setter method
