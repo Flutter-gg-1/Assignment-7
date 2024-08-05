@@ -30,6 +30,6 @@ showExercise2() {
 
   customer1.addBook(book1);
   customer1.addBook(book2);
-
+  customer1.addBook(book3);
   customer1.printInformation();
 }
