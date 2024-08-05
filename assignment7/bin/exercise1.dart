@@ -60,4 +60,20 @@ class Rectangle extends Shape {
     double? perimeter;
     print("Rectangle perimeter is: $perimeter");
   }
+
+  get getLength {
+    return _length;
+  }
+
+  get getWidth {
+    return _width;
+  }
+
+  set setLength(double length) {
+    _length = length;
+  }
+
+  set setWidth(double width) {
+    _width = width;
+  }
 }
