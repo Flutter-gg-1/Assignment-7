@@ -7,6 +7,7 @@ abstract class Shape {
 
 class Circle extends Shape {
   double? _radius;
+  // ignore: constant_identifier_names
   static const PI = pi;
 
   Circle(this._radius);
@@ -50,7 +51,7 @@ class Rectangle extends Shape {
   get getWidth => _width;
 
   set setLength(double length) => _length = length;
-  set setWidthh(double width) => _width = width;
+  set setWidth(double width) => _width = width;
 
   @override
   void getArea() {
