@@ -14,8 +14,20 @@ void displayBookStorePannel() {
   print('|Author 3 ID: ${author3.idAuther}|');
   print('----' * 4);
   //used class book and created 3 object
+  int editionNumber = 0;
+  // error handling for user inputs.
+  try {
+    print('Enter Edition Number for the books');
+    editionNumber = int.parse(stdin.readLineSync()!);
+  } catch (e) {
+    print(e);
+  }
+
   Book book1 = Book(
-      name: 'C#', isbn: '987-9-16-19723-0', editionNumber: 1, author: author1);
+      name: 'C#',
+      isbn: '987-9-16-19723-0',
+      editionNumber: editionNumber,
+      author: author1);
   Book book2 = Book(
       name: 'Flutter',
       isbn: '900-9-16-11113-0',
