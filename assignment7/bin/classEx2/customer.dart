@@ -11,13 +11,15 @@ class Customer extends Person {
     bookList.add(book);
   }
 
-  void printInformation() {
+  printInformation(List authers) {
     print("-------Your information---------");
     print(
         "Customer name : $name\nCustomer Email : $email\nCustomer phone : $phone");
     for (var element in bookList) {
       print("Book:${element.name}");
+      print("Auther:${element.author!.name}");
     }
+
     print("--------------End---------------");
   }
 }
