@@ -10,7 +10,7 @@ abstract class Shape {
 class Circle extends Shape {
   // attributes
   double _radius;
-  static const double PI = pi;
+  static const double dPI = pi;
   // parameterized constructor
   Circle(this._radius);
   // named constructor
