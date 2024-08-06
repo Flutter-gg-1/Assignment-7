@@ -1,4 +1,5 @@
 # Dart OOP Exercises
+<img src="assets/img/dart_logo.png" alt="dart" width="200" style= "" />
 
 ## Exercise 1: Shapes
 
@@ -25,6 +26,7 @@ dart run
 <img src="assets/img/output_exe01.png" alt="Shapes Example" width="300" />
 
 
+
 ## Exercise 2: Books and Customers
 
 This exercise demonstrates the use of classes, inheritance, and object relationships in Dart.
@@ -42,7 +44,7 @@ This exercise demonstrates the use of classes, inheritance, and object relations
 - **Customer**: Extends Person, maintains a list of purchased books.
 
 ### Sample Output
-<img src="assets/img/output_exe02.png" alt="Shapes Example" width="400" />
+<img src="assets/img/output_exe02.png" alt=" Books and Customers Example" width="400" />
 
 
 ## Notes
