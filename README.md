@@ -1,121 +1,88 @@
+
+
+
+![Exercise_1_ _2OOP](https://github.com/user-attachments/assets/57690c80-76bf-4d80-9be3-5f7c4cd86b48)
+
+
 ## Exercise 1
 
-In this exercise, you will work with object-oriented programming concepts by creating classes and using error handling. Follow the instructions below to complete the exercise:
+### Key futures :
+##### - creating classes 
+##### -  Abstract  class contain two methods ( * get Area    * get perimeter )
 
-### Instructions:
+##### -  Rectangle & Circle  class  extended class shape containing private perimeters, two methods and getter & setter 
 
-1. **Create a Dart file named `exercise1.dart`**.
+## -output of Ex 1 :
 
-2. **Abstract Class**:
-   - Create an abstract class called `Shape` with the following methods:
-     - `void getArea();`
-     - `void getPerimeter();`
+#### * displayed menu 
 
-3. **Circle Class**:
-   - Create a class `Circle` that extends `Shape`.
-   - Implement the methods from the abstract class.
-   - Define a private variable for `radius`.
-   - Define `PI` as a constant using the Math library.
-   - Implement two constructors:
-     - A parameterized constructor.
-     - A named constructor called `noAttribute` that assigns `radius` a default value of 2.
-   - In the `getArea()` method:
-     - Define an `area` variable to store the result of the area calculation.
-     - Print the area in the format: `"circle area is: $area"`.
-   - In the `getPerimeter()` method:
-     - Define a `perimeter` variable to store the result of the perimeter calculation.
-     - Print the perimeter in the format: `"circle perimeter is: $perimeter"`.
-   - Provide getter and setter methods for `radius`.
+<img width="396" alt="Screenshot 2024-08-06 at 2 05 07 AM" src="https://github.com/user-attachments/assets/f7de7e61-c843-4261-a48e-b2f3a46fb04a">
 
-4. **Rectangle Class**:
-   - Create a class `Rectangle` that extends `Shape`.
-   - Implement the methods from the abstract class.
-   - Define private variables for `length` and `width`.
-   - Implement two constructors:
-     - A parameterized constructor.
-     - A named constructor called `noAttribute` that assigns `length` and `width` a default value of 3.
-   - In the `getArea()` method:
-     - Define an `area` variable to store the result of the area calculation.
-     - Print the area in the format: `"Rectangle area is: $area"`.
-   - In the `getPerimeter()` method:
-     - Define a `perimeter` variable to store the result of the perimeter calculation.
-     - Print the perimeter in the format: `"Rectangle perimeter is: $perimeter"`.
-   - Provide getter and setter methods for `length` and `width`.
 
-5. **Main Class**:
-   - Create 2 objects of the `Circle` class named `c1` and `c2`:
-     - `c1` with a radius of 5.
-     - `c2` using the named constructor without a radius parameter.
-   - Execute `getArea()` using `c1`.
-   - Execute `getPerimeter()` using `c1`.
-   - Print the radius of `c2`.
-   - Create an object of the `Rectangle` class named `r1` with a length of 3 and a width of 5.
-   - Execute `getArea()` using `r1`.
-   - Modify either the length or width (but not both) to make the perimeter equal to 22.
-   - Execute `getPerimeter()` using `r1`.
+##### * User enter 1 displayed this page 
 
-## Exercise 2
 
-In this exercise, you will continue working with object-oriented programming by creating classes related to books and customers. Follow the instructions below:
+<img width="405" alt="Screenshot 2024-08-06 at 2 34 25 AM" src="https://github.com/user-attachments/assets/c30c3882-5a55-43d3-a42b-12d891f2de57">
 
-### Instructions:
+##### * User enter 2 displayed this page 
 
-1. **Create a Dart file named `exercise2.dart`**.
+<img width="405" alt="Screenshot 2024-08-06 at 2 05 32 AM" src="https://github.com/user-attachments/assets/d630f3a4-2407-4d55-bd48-8d1082861d22">
 
-2. **Person Class**:
-   - Create a class called `Person` with the following attributes:
-     - `name`
-     - `email`
+##### *  User enters any number other than 1 or 2 and the message This message appears
 
-3. **Author Class**:
-   - Create a class `Author` that extends `Person`.
-   - Define a constructor.
-   - Add an integer variable `id` that starts from 1 and increments automatically with each new object created.
+<img width="405" alt="Screenshot 2024-08-06 at 2 06 05 AM" src="https://github.com/user-attachments/assets/69d4978d-b072-4111-af9a-03e0fed91841">
 
-4. **Book Class**:
-   - Create a class `Book` with the following attributes:
-     - `name`
-     - `ISBN` (International Standard Book Number) as a string
-     - `edition number`
-     - `author` (an object of the `Author` class)
+##### *  User enters any character this message appears.
 
-5. **Customer Class**:
-   - Create a class `Customer` that extends `Person`.
-   - Define a constructor.
-   - Add a list called `bookList` (of type `Book`) to store purchased books.
-   - Define two methods:
-     - `addBook(Book book)`: to add a new book to the list.
-     - `printInformation()`: to print:
-       - Customer information.
-       - Information about each book in the list, including the author.
+<img width="405" alt="Screenshot 2024-08-06 at 2 05 49 AM" src="https://github.com/user-attachments/assets/6d344432-ae6c-48ca-bdf5-7cfe82411a2d">
 
-6. **Main Class**:
-   - Create 3 objects of type `Author` named `author1`, `author2`, and `author3`.
-   - Create 3 objects of type `Book` named `book1`, `book2`, and `book3`.
-   - Print the `id` for each author; they should all be different.
-   - Create at least one object of type `Customer` named `customer1`.
-   - Add books to `customer1`'s book list using the `addBook()` method.
-   - Print information about `customer1` and their book list.
+##### ........................................................................
+
+## Exercise 1
+
+### Key futures :
+##### - creating classes 
+##### -  person  class contain two Attributes  
+##### -  Author  class  extended class person  contain ID 
+##### -  Book   class contain some of  Attributes  
+##### -  Customer extended class person contain list to store book  
+
+
+
+## -output of Ex 1 :
+
+
+
+## -output :
+
+#### * displayed menu 
+
+<img width="405" alt="Screenshot 2024-08-06 at 1 35 28 AM" src="https://github.com/user-attachments/assets/acab5a11-6245-41da-8ead-bd5b6a21ef9d">
+
+##### * User enter 1 displayed Author IDs
+
+<img width="401" alt="Screenshot 2024-08-06 at 1 36 21 AM" src="https://github.com/user-attachments/assets/3f34f1d9-49b7-4a47-b54d-bddf8923d3f3">
+
+
+##### * User enter 2 displayed Customers Information 
+
+<img width="405" alt="Screenshot 2024-08-06 at 2 47 11 AM" src="https://github.com/user-attachments/assets/4eeb6116-7b1d-4648-a072-198afeb499a3">
+
+##### *  User enters any number other than 1 or 2 and the message This message appears
+<img width="405" alt="Screenshot 2024-08-06 at 1 37 31 AM" src="https://github.com/user-attachments/assets/81a7f9fd-0fae-42b1-b32d-d90970c38170">
+
+
+##### *  User enters any character this message appears.
+
+<img width="405" alt="Screenshot 2024-08-06 at 1 37 11 AM" src="https://github.com/user-attachments/assets/8ebe9886-d82c-4b48-937f-1c7868592a58">
 
 
 
 
-## Evaluation Criteria:
-
-The project will be evaluated based on the following criteria:
-
-- **Completion**: The extent to which the project meets all the minimum requirements, including the extra credit ideas if implemented.
-
-- **Quality**: The overall quality of the project, including the coding style, organization, and ease of maintenance. Well-structured and readable code will be favorably evaluated.
-
-- **Use of Programming Concepts**: How well you utilize programming concepts.
-- **README.md File**: Include a README.md file with instructions on how to run and test the project. This file should provide a clear guide for users to understand how to interact with the CLI, and include relevant screenshots or output of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
-
-#### Submission Details:
-- *Deadline:* August 6, 2024, 9:59 AM
-- *Submission Format:* Provide your Dart code file(s) along with a README file explaining your implementation.
-
-Good luck, and happy coding!
 
 
-Ensure you use object-oriented programming concepts and include error handling for user inputs.
+
+
+
+
+
