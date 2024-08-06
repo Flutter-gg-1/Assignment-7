@@ -43,7 +43,7 @@ void main() {
     exit(0);
   }
 
-  Customer customer1 = Customer(customerName!, customerEmail!);
+  Customer customer1 = Customer(customerName, customerEmail);
 
   customer1.addBook(book1);
   customer1.addBook(book2);
