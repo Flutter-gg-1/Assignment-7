@@ -31,15 +31,19 @@ void main() {
 
   try {
     print("Please enter customer name: ");
-    customerName = stdin.readLineSync();
+    customerName = stdin.readLineSync()!;
     print("Please enter customer email: ");
-    customerEmail = stdin.readLineSync();
+    customerEmail = stdin.readLineSync()!;
+
+    if (customerName.isEmpty || customerEmail.isEmpty) {
+      throw FormatException("Invalid customer email");
+    }
   } catch (error) {
     print("opps there is an error");
+    exit(0);
   }
 
   Customer customer1 = Customer(customerName!, customerEmail!);
-
 
   customer1.addBook(book1);
   customer1.addBook(book2);
